@@ -13,8 +13,8 @@ jobs:
       -  name: login in docker hub
          uses: docker/login-action@v3.3.0
          with: 
-          username: ${{vars.USERNAME}}
-          password: ${{secrets.ACCESS_TOKEN}}
+          username: ${{ vars.USERNAME }}
+          password: ${{ secrets.ACCESS_TOKEN }}
 
   build:
     runs-on: ubuntu-latest
